@@ -94,7 +94,7 @@ Let's find out!
 
 <div align="center">
 <br>
-<img src="pics/r-knowledge.png" height=500>
+<img src="pics/r-knowledge-perc.png" height=500>
 </div>
 
 
