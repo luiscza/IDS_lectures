@@ -2,13 +2,13 @@
 title: "Introduction to Data Science"
 subtitle: "Session 1: What is data science?"
 author: "Simon Munzert"
-institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-24)" #"`r format(Sys.time(), '%d %B %Y')`"
+institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-25)" #"`r format(Sys.time(), '%d %B %Y')`"
 output:
   xaringan::moon_reader:
     includes:
-      after_body: "../add_hertie_logo.html"
-      in_header: "../my_header.html"
-    css: [default,'../simons-touch.css', metropolis, metropolis-fonts] 
+      after_body: "add_hertie_logo.html"
+      in_header: "my_header.html"
+    css: [default,'simons-touch.css', metropolis, metropolis-fonts] 
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -68,7 +68,7 @@ library(fontawesome)
 
 ### Course
 
-`r fa('globe')` https://github.com/intro-to-data-science-24
+`r fa('globe')` https://github.com/intro-to-data-science-25
 
 Much of this course lives on GitHub. You will find lecture materials, code, assignments, and other people's presentations there. We also have Moodle, which is is for everything else.
 
@@ -86,7 +86,7 @@ Much of this course lives on GitHub. You will find lecture materials, code, assi
 
 ### You
 
-What's your name? And would you share a fun fact about yourself?
+Let's find out!
 
 ---
 
@@ -98,47 +98,6 @@ What's your name? And would you share a fun fact about yourself?
 </div>
 
 
----
-
-# More about you
-
-.pull-left[
-<div align="center">
-<br><b>MPP/MIA/PhD</b>
-<br>
-<img src="pics/wordcloud-mpp.png" height=400>
-</div>
-]
-
-.pull-right[
-<div align="center">
-<br><b>MDS</b>
-<br>
-<img src="pics/wordcloud-mds.png" height=400>
-</div>
-]
-
----
-
-# More about you
-
-.pull-left[
-<div align="center">
-<br><b>MPP/MIA/PhD</b>
-<br>
-<img src="pics/terms_freq_mpp.png" height=400>
-</div>
-]
-
-.pull-right[
-<div align="center">
-<br><b>MDS</b>
-<br>
-<img src="pics/terms_freq_mds.png" height=400>
-</div>
-]
-
-
 
 ---
 
@@ -148,7 +107,7 @@ What's your name? And would you share a fun fact about yourself?
 
 ## Who & how
 
-- This course is accompanied by labs administered by **Carmen Garro** and **Sebastian Ramirez Ruiz**.
+- This course is accompanied by labs administered by **Carol Sobral** and **Killian Conyngham**.
 - The labs are mandatory (MDS) / optional (the rest). Please attend them in any case.
 - As with the regular classes, please stick to the lab you are assigned to.
 
@@ -166,10 +125,10 @@ What's your name? And would you share a fun fact about yourself?
 .pull-right-small-center[
 <div align="center">
 <br>
-<img src="pics/carmen-circle.png" height=200>
+<img src="pics/carol-circle.png" height=200>
 <br>
 <br>
-<img src="pics/sebastian-circle.png" height=200>
+<img src="pics/killian-circle.png" height=200>
 </div>
 ]
 
@@ -218,17 +177,61 @@ name: whatisdatascience
 
 
 ---
-# What is data science?
+
+# What you think data science entails
+
+.pull-left[
+<div align="center">
+<br><b>MPP/MIA/PhD</b>
+<br>
+<img src="pics/wordcloud-mpp.png" height=400>
+</div>
+]
+
+.pull-right[
+<div align="center">
+<br><b>MDS</b>
+<br>
+<img src="pics/wordcloud-mds.png" height=400>
+</div>
+]
+
+---
+
+# What you think data science entails
+
+.pull-left[
+<div align="center">
+<br><b>MPP/MIA/PhD</b>
+<br>
+<img src="pics/terms_freq_mpp.png" height=400>
+</div>
+]
+
+.pull-right[
+<div align="center">
+<br><b>MDS</b>
+<br>
+<img src="pics/terms_freq_mds.png" height=400>
+</div>
+]
+
+
+
+---
+#Definitions of data science
 
 .pull-left[
 ## What is data science?
 
-> "Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from potentially noisy, structured, or unstructured data." - [Wikipedia](https://en.wikipedia.org/wiki/Data_science)
+> "Data science is an **interdisciplinary academic field** that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from potentially noisy, structured, or unstructured data." - [Wikipedia](https://en.wikipedia.org/wiki/Data_science)
 
-> "Data science is a concept to unify statistics, data analysis, informatics, and their related methods to understand and analyze actual phenomena with data." - [Chikio Hayashi](https://www.springer.com/book/9784431702085)
+> "Data science is a concept to **unify statistics, data analysis, informatics**, and their related methods to understand and analyze actual phenomena with data." - [Chikio Hayashi](https://www.springer.com/book/9784431702085) 
 
-Overall, there's **no consensus** - it is a buzzword after all. We're going to carry on with Conway's working definition.
+> "Data science encompasses a **set of principles**, problem definitions, algorithms, and processes for **extracting nonobvious and useful patterns from large data sets**." - [John Kelleher and Brendan Tierney](https://mrce.in/ebooks/Data%20Science.pdf)
 ]
+
+--
 
 .pull-right[
 ## A working definition
@@ -682,65 +685,12 @@ name: datasciencepublicpolicy
 
 
 
-
-
-
 ---
 class: inverse, center, middle
 name: logistics
 
 # Class logistics
 <html><div style='float:left'></div><hr color='#EB811B' size=1px style="width:1000px; margin:auto;"/></html>
-
-
-
----
-
-# Introduction to Data Science in a nutshell
-
-<div align="center">
-<br>
-<img src="pics/ids-syllabus-2024.png" height=500>
-</div>
-
-
-
-
----
-# The plan
-
-.pull-left[
-
-### Goals of the course
-
-- This course equips you with conceptual knowledge about the data science pipeline and coding workflow, data structures, and data wrangling.
-- It enables you to apply this knowledge with statistical software.
-- It prepares you for our other core courses and electives as well as the master’s thesis.
-
-<div align="center">
-<img src="pics/venn-focus.png" height=230>
-</div>
-
-]
-
---
-
-.pull-right[
-### What we will cover
-
-- Version control and project management
-- R and the tidyverse
-- Programming workflow: debugging, automation, packaging
-- Relational databases and SQL
-- Web data and technologies
-- Model fitting and evaluation
-- Viusalization
-- Monitoring and communication
-- Data science ethics
-- (The command line)
-
-]
-
 
 ---
 background-image: url("pics/harry-ron-hermione-start.jpeg")
@@ -756,6 +706,17 @@ background-size: contain
 background-color: #000000
 
 # You at the end of the course
+
+
+
+---
+
+# Introduction to Data Science in a nutshell
+
+<div align="center">
+<img src="pics/ids-syllabus-2025.png" height=520>
+</div>
+
 
 
 
@@ -832,7 +793,7 @@ pop_df %>%
     subtitle = "Number of job postings for '<language> data' on de.indeed.com, 2023/09/01"
     ) +
   scale_fill_manual(
-    "Free?",
+    "Free of charge?",
     labels = c("True", "False"),
     values = c("#f92672", "darkslategray")
     ) +
@@ -846,10 +807,189 @@ pop_df %>%
 # Why R and RStudio? (cont.)
 
 <div align="center">
-<img src="pics/facebook-programming-languages.png" width=600>
+<img src="pics/facebook-programming-languages.png" width=550>
 </div>
 `Credit` [Left_Ad8361/Reddit](https://www.reddit.com/r/dataisbeautiful/comments/qw1bew/oc_which_programming_language_is_required_to_land/)
 
+
+---
+# Attendance
+
+## General rules
+
+- You cannot miss more than two sessions. If you have to miss a session for medical reasons or personal emergencies, please **inform Examination Office** and they will inform me about your absence.
+- I **don't want you to notify me about absences** in advance or ex post.
+- We will check attendance on-site.
+
+
+## Office hours and advice
+
+- If you want to discuss content from class, first do so in with your Lab TA. 
+- If you want to discuss something with the entire group, use the Moodle forum.
+- If you want to discuss something with me, please sign up for a slot in my office hours (link on Moodle).
+- For general technical advice, the [Research Consulting Team at the Data Science Lab](https://hertie-data-science-lab.github.io/research-consulting/) is there for you.
+
+
+
+---
+# Assignments and grading
+
+| Component                           | Weight |
+|:-|-:|
+| 3(4) × homework assignments | pass/fail |
+| 4(5) × online quizzes (5% each) | 20% |
+| 1 × hackathon project       | 40% |
+| 1 × in-class coding exam 	| 40% |
+
+--
+
+### Homework assignments 
+- Your incentive to practice what you learn in class regularly!
+- Each assignment is a mix of practical problems that are to be solved with R.
+- The assignments are distributed via our own [GitHub Classroom](https://classroom.github.com/classrooms/113288627-intro-to-data-science-25-classroom).
+- You are encouraged to collaborate, but everyone will hand in a separate solution.
+- There will be 4 assignments (one every ~2 weeks), and you'll have to submit 3 of them to pass the course.
+- You'll have one week to work on each assignment (deadline: Tuesdays at 9:30am).
+- You submit your solutions via GitHub.
+- Grading: pass/fail + feedback. Your solutions don't have to be perfect, but we want to see an individual effort.
+
+
+---
+# Assignments and grading
+
+| Component                           | Weight |
+|:-|-:|
+| 3(4) × homework assignments | pass/fail |
+| 4(5) × online quizzes (5% each) | 20% |
+| 1 × hackathon project       | 40% |
+| 1 × in-class coding exam 	| 40% |
+
+### Online quizzes
+- The short online quizzes will test your knowledge about the topics covered in class.
+- There will be 5 quizzes and the 4 best will contribute to the final grade.
+- You'll have one week to work on each assignment (deadline: Tuesdays at 9:30am).
+- Note that quizzes will employ light negative grading. Usually a question is multiple choice, with an unknown number of correct items. The rationale is that if you select all options with not all of them being correct, you should not receive full credit (otherwise, in the absence of negative grading, selecting all answers would be the dominant strategy). 
+
+
+---
+# Assignments and grading
+
+| Component                           | Weight |
+|:-|-:|
+| 3(4) × homework assignments | pass/fail |
+| 4(5) × online quizzes (5% each) | 20% |
+| 1 × hackathon project       | 40% |
+| 1 × in-class coding exam 	| 40% |
+
+### Hackathon project
+- On December 1, 14-16h, there will be a hackathon hosted at Hertie.
+- At the hackathon itself, I'll introduce the data and provide an environment that should facilitate you getting started with the project and form groups of 3-4 students.
+- After the hackathon project, you will get instructions . You will then have 72 hours to submit your solutions.
+- The task is similar to the homework assignments but puts more emphasis on creative problem-solving using the tools and techniques you have learned in class.
+
+
+
+---
+# Assignments and grading
+
+| Component                           | Weight |
+|:-|-:|
+| 3(4) × homework assignments | pass/fail |
+| 4(5) × online quizzes (5% each) | 20% |
+| 1 × hackathon project       | 40% |
+| 1 × in-class coding exam 	| 40% |
+
+### In-class coding exam
+- The in-class coding exam will take place in the final exam week (date tba).
+- The exam will be open-book, open-internet, and open-R. Collaboration will not be allowed.
+- The exam will be similar to the homework assignments but with a stronger emphasis on problem-solving under time constraints.
+- You will have 90 minutes to solve the exam.
+
+
+
+---
+# AI use in and for the course
+
+.pull-left-vwide[
+
+### Can AI tools (LLM-based coding assistants) be used for assignments?
+
+- Yes, but use them with care. You will not become an efficient programmer if you heavily rely on those tools without learning the basics.
+- The Hertie School has a [guideline]((https://moodle.hertie-school.org/mod/url/view.php?id=130259) in place that address the use of AI tools in education installed .
+- Some key elements from the guidelines:
+  - "Students are required to include a Statement of Authorship and AI Use at the end of each written assignment (...), which states their authorship including the use of AI and the absence of plagiarism."
+  - "[A]ll AI tools that have been used need to be specified in the Statement of Authorship."
+  - "Students are responsible for factual errors and false references in their assignments,
+even if these have been provided by AI tools that were properly disclosed. The assignment
+will receive a grade penalty in such instances."
+- "Non-disclosed or non-permitted (...) use of AI in assignments (...) is a
+violation of good academic conduct."
+]
+
+.pull-right-vsmall[
+<div align="center">
+<br>
+<img src="pics/chatgpt-logo.png" height=100>
+<br><br>
+<img src="pics/claude-ai-logo.png" height=50>
+<br><br>
+<img src="pics/gemini-code-assist-logo.png" height=100>
+<br><br>
+<img src="pics/github-copilot-logo.jpeg" height=100>
+<br>
+</div>
+]
+
+
+---
+# AI use in and for the course (cont.)
+
+.pull-left[
+## Your use of AI tools
+
+<div align="center">
+<br>
+<img src="pics/ai_usage_general.png" width=550>
+<br>
+</div>
+]
+
+.pull-right[
+## Your use of AI coding assistants
+
+<div align="center">
+<br>
+<img src="pics/ai_usage_coding_by_group.png" width=550>
+<br>
+</div>
+]
+
+
+
+
+
+---
+# AI use in and for the course (cont.)
+
+.pull-left-vwide[
+
+### *Should* you use AI tools for this course?
+
+- You are a student at one of the leading policy schools in the world. You decided to invest a considerable amount of time and money to learn about data science and public policy here. I think you're at the right place to do so.
+- However, the learning is still on you. What is key is that you want to *understand* what you are doing. That will require you to think hard and work hard. And that is ultimately what you need to excel in a data-based job.
+- Or, you could just rely on some commercial language model to do the hard work for you. If you do that, you will notice that the muscles you wanted to train will not grow.
+- That is not to say that AI is not useful for coding. It is incredibly powerful. But it also often fails spectacularly. You need to understand what is going on under the hood to make it work for you.
+- I am not here to discipline and punish. I have no interest in that. What I can do is provide you with an environment that facilitates learning and sets the right incentives. If you want to learn, I will help you. If you don't, I can't.
+
+]
+
+
+.pull-right-vsmall[
+<div align="center">
+<br><br><br>
+<img src="pics/wickham-shitty-code.jpeg" height=200>
+</div>
+]
 
 
 ---
@@ -863,167 +1003,6 @@ pop_df %>%
 <img src="pics/bitbybit.png" height=300>
 <img src="pics/datasciencekelleher.jpeg" height=300>
 </div>
-
-
-
----
-# This semester
-
-<div align="center">
-<br>
-<img src="pics/wickham-shitty-code.jpeg" height=400>
-</div>
-
-
-
-
----
-# Attendance
-
-## General rules
-
-- You cannot miss more than two sessions. If you have to miss a session for medical reasons or personal emergencies, please **inform Examination Office** and they will inform me about your absence. There is no need to notify me in advance or ex post.
-- We will check attendance on-site.
-- The current **Hertie hygiene rules** apply!
-
-
----
-# Office hours and advice
-
--  If you want to discuss content from class, please first do so in the lab sessions. 
-- If you still need more feedback on course topics, use the Moodle forum.
-- If you want to discuss any other matters with me, drop Alex Karras, my assistant, a message (`r fa('envelope')` [karras@hertie-school.org](mailto:karras@hertie-school.org)) and he will arrange a meeting.
-- For general technical advice, the [Research Consulting Team at the Data Science Lab](https://hertie-data-science-lab.github.io/research-consulting/) is there for you.
-
-
-
----
-# Assignments and grading
-
-| Component                           | Weight |
-|:-|-:|
-| 4(5) × homework assignments (10% each) | 40% |
-| 4(5) × online quizzes (5% each) | 20% |
-| 1 × workshop presentation/attendance 	| 10% |
-| 1 × hackathon project       | 30% |
-
---
-
-### Homework assignments 
-- The assignments are distributed via our own [GitHub Classroom](https://classroom.github.com/classrooms/113288608-introduction-to-data-science-fall-2024).
-- Each assignment is a mix of practical problems that are to be solved with R.
-- You are encouraged to collaborate, but everyone will hand in a separate solution.
-- There will be 5 assignments (one every ~2 weeks; see [overview on GitHub](https://github.com/intro-to-data-science-24/assignments)) and the 4 best will contribute to the final grade.
-- You'll have one week to work on each assignment (deadline: Tuesdays at 9:30am).
-- You submit your solutions via GitHub.
-
-
----
-# Assignments and grading
-
-| Component                           | Weight |
-|:-|-:|
-| 4(5) × homework assignments (10% each) | 40% |
-| 4(5) × online quizzes (5% each) | 20% |
-| 1 × workshop presentation/attendance 	| 10% |
-| 1 × hackathon project       | 30% |
-
-### Homework assignments 
-- Grades will be based on (1) the accuracy of your solutions and (2) the adherence of a clean and efficient coding style.
-- Feedback will be verbal:
-  - Excellent (95+)
-  - Very good (90-94)
-  - Good (85-89)
-  - OK (80-84)
-  - Acceptable (75-79)
-  - Definitely needs improvement (below 75)
-
-
----
-# Assignments and grading
-
-| Component                           | Weight |
-|:-|-:|
-| 4(5) × homework assignments (10% each) | 40% |
-| 4(5) × online quizzes (5% each) | 20% |
-| 1 × workshop presentation/attendance 	| 10% |
-| 1 × hackathon project       | 30% |
-
-### Online quizzes
-- The short online quizzes will test your knowledge about the topics covered in class.
-- There will be 5 quizzes and the 4 best will contribute to the final grade.
-- You'll have one week to work on each assignment (deadline: Tuesdays at 9:30am).
-- Note that quizzes will employ negative grading. Usually a question is multiple choice, with an unknown number of correct items. The rationale is that if you select all options with not all of them being correct, you should receive 0 points (otherwise, in the absence of negative grading, selecting all answers would be the dominant strategy). Examples are a question with three correct options (33% each) and three wrong ones (-33% each) and another question with one correct option (100%) and 6 wrong ones (-16.7% each).
----
-# Assignments and grading
-
-| Component                           | Weight |
-|:-|-:|
-| 4(5) × homework assignments (10% each) | 40% |
-| 4(5) × online quizzes (5% each) | 20% |
-| 1 × workshop presentation/attendance 	| 10% |
-| 1 × hackathon project       | 30% |
-
-### Workshop presentation (MDS students)
-- On October  28, 14-20h, we will flip roles and you will become instructor of a data science workshop session.
-- You, in groups of 2 students, will present a data science workflow tool (randomly [allocated](https://github.com/intro-to-data-science-24/workshop-presentations)).
-- Your contribution will include:
-  1. A lightning talk (recorded) where you briefly introduce and motivate the tool
-  2. A hands-on session where you showcase the tool and provide practice material
-- Both the recorded talk and the materials will be graded.
-- Check out the materials from previous workshops online [`>2021<`](https://intro-to-data-science-21-workshop.github.io/) [`>2022<`](https://intro-to-data-science-22-workshop.github.io/)
-[`>2023<`](https://intro-to-data-science-23-workshop.github.io/)!
-- **MPP/MIA students**: You will not give a talk, but have to actively participate in the workshop.
-
-
-
----
-# Assignments and grading
-
-| Component                           | Weight |
-|:-|-:|
-| 4(5) × homework assignments (10% each) | 40% |
-| 4(5) × online quizzes (5% each) | 20% |
-| 1 × workshop presentation/attendance 	| 10% |
-| 1 × hackathon project       | 30% |
-
-### Hackathon project
-- On December 2, 13-16h, there will be a hackathon hosted at Hertie.
-- At the hackathon itself, we introduce the data and provide an environment that should facilitate you getting started with the project and form groups of 3-4 students.
-- Two weeks later, on December 16, the project instructions will be made available. You will then have 48 hours to submit your solutions.
-- The task is similar to the homework assignments but puts more emphasis on creative problem-solving using the tools and techniques you have learned in class.
-
-
----
-# AI use in and for the course
-
-
-
-.pull-left-wide[
-
-### Can AI tools (LLM interfaces, AI pair programming) be used for assignments?
-
-- Yes, but use them with care. You will not become an efficient programmer if you heavily rely on those tools without learning the basics.
-- The Hertie School has installed [teaching guidelines on the use of AI Tools](https://www.hertie-school.org/en/news/allcontent/detail/content/hertie-school-defines-guidelines-for-use-of-artificial-intelligence-software-at-university) in Spring 2023. We will stick to those guidelines.
-- Some key elements from the guidelines:
-  - "Familiarity with AI tools is helpful for the learning experience and the professional development of students afterwards, ..."
-  - "... but needs to be done with clear guidelines on ethical use, biases, and limits of the tools that are currently available."
-  - "[T]he use of AI tools for the preparation of assignments (...) needs to be clearly referenced in the text."
-  
-]
-
-.pull-right-small-center[
-<div align="center">
-<br>
-<img src="pics/chatgpt-logo.png" height=200>
-<br>
-<br>
-<img src="pics/github-copilot-logo.jpeg" height=200>
-</div>
-]
-
-
-
 
 
 
@@ -1093,7 +1072,7 @@ pop_df %>%
 
 ### The first lab session
 
-Get to know Carmen, Sebastian, R, and RStudio, four of your best friends for the next months!
+Get to know Carol, Killian, R, and RStudio, four of your best friends for the next months!
 
 ### Next lecture
 
