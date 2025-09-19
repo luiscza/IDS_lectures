@@ -855,112 +855,6 @@ In the context of data science with R, the `targets` package is an interesting o
 
 
 
----
-# Writing an R package
-
-.pull-left[
-### The state of the R package ecosystem
-
-- As of November 2024, the CRAN package repository features more than 21,600 packages.
-- Many, many more are available on GitHub and other code sharing platforms.
-- R has a vivid community that continuous to create and build extensions and maintain the existing environment. Many of them have much more training and time to invest in software development.
-- So, why should we (and with that I mean YOU) write yet another R package?
-]
-
-.pull-right-center[
-<br>
-<div align="center">
-<img src="pics/number-of-submitted-packages-to-CRAN.png" width="550"/>
-</div>
-`Credit` [daroczig](https://gist.github.com/daroczig/3cf06d6db4be2bbe3368)
-]
-
-
----
-# Why create another R package?
-
-.pull-left-wide[
-1. **Thinking in functions.** R is a functional programming language, and packages bundle functions. Thinking of projects as packages is consistent with a functional mindset.
-
-2. **Automation and transportability.** By turning tasks into functions, you save repetitive typing, keep frequently-used code together, and let code travel across projects.
-
-3. **Collaboration and transparency.** Packages are ideal to make functionality available to others, but also to let others contribute. As a side effect, it nudges you to document your functions properly and gives you the opportunity to let others review and improve your code easily. 
-
-4. **Visibility and productization.** Publishing code in packages is potentially giving your project a big boost in visibility. Also, it is more likely to be perceived as a product than an insular project.
-]
-
-.pull-right-small[
-<br>
-<div align="center">
-<img src="pics/rpackage-logo.png" width="350"/>
-<br>
-<img src="pics/github-logo.png" height="150"/> 
-<img src="pics/cran-logo.png" height="150"/>
-</div>
-]
-
-
-
----
-# Creating a package from start to finish
-
-.pull-left[
-
-1. Choose a package name
-2. Set up your package with RStudio (and GitHub)
-3. Fill your package with life
-  - Add functions
-  - Write help files
-  - Write a `DESCRIPTION`
-  - Add internal data
-4. Check your package
-  - Write tests
-  - Check on various operating systems
-  - Check for good coding practice
-5. Submit to CRAN (or GitHub early in the process)
-6. Promotion
-  - Write a vignette
-  - Build a package website
-]
-
-
-.pull-right-center[
-<div align="center">
-<br>
-<img src="pics/r-package-workflow.png" width="470"/>
-</div>
-`Credit` [Simo Goshev, Steve Worthington](https://iqss.github.io/dss-rbuild/)
-]
-
-
-
----
-# Writing R packages - FAQ
-
-.pull-left[
-### Is learning this worth the time?
-
-Yes.
-
-### Where can I learn more?
-
-Glad that you're asking! There's tons of materials out there. Apart from the used [tutorial](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/) and the [R packages book](https://r-pkgs.org/), have a look at the [devtools cheatsheet](https://rawgit.com/rstudio/cheatsheets/master/package-development.pdf) and another overview over at [RStudio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-the-RStudio-IDE). Knowing how to [turn a package into a website](https://pkgdown.r-lib.org/dev/) within minutes is fascinating, too. 
-
-### When do we need a package, and when is a GitHub repo simply enough?
-
-Do you think of your work as a project or a product? If it's the latter, maybe a package is right for you. (But... a research paper is also a product, right? 🤯)
-]
-
-.pull-right[
-<div align="center">
-<br>
-<img src="pics/devtools-cheatsheet-1.png" width="350"/>
-<img src="pics/devtools-cheatsheet-2.png" width="350"/>
-</div>
-]
-
-
-
 <!-- ############################################ -->
 ---
 class: inverse, center, middle
@@ -1591,13 +1485,16 @@ undebug(stats::lm) #<<
 
 <br>
 
-### Quiz
+### Assignment 1 and Quiz 1
 
-One more quiz to go!
+Don't forget to submit your solutions for Assignment 1. Also, Quiz 1 is online!
+
 
 ### Next lecture
 
-Two more sessions to go. In the next one, we're going to talk about communication and monitoring.
+We're going to dig into the world wide web...
+
+<b>Important:</b> The lecture is going to take place on Wednesday, 8-10am, in the Forum! If your regular lab is schedule for that slot, please visit the lab session at the ordinary lecture slot instead (Mon, 10-12h). The lecture will be recorded and made available in case you cannot attend.
 
 
 
