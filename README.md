@@ -12,7 +12,7 @@
 
 2. Programming I: Project management, coding etiquette, functions \[[**.html**](https://raw.githack.com/intro-to-data-science-25/lectures/main/02-functions/02-functions.html) | [**.pdf**](https://raw.githack.com/intro-to-data-science-25/lectures/main/02-functions/02-functions.pdf) | [**.Rmd**](https://raw.githack.com/intro-to-data-science-25/lectures/main/02-functions/02-functions.Rmd)\]
 
-3. Programming II: Iteration, automation, scheduling \[[**.html**](https://raw.githack.com/intro-to-data-science-25/lectures/main/03-iteration/10-automation-packages.html) | [**.pdf**](https://raw.githack.com/intro-to-data-science-25/lectures/main/10-automation-packages/10-automation-packages.pdf) | [**.Rmd**](https://raw.githack.com/intro-to-data-science-25/lectures/main/10-automation-packages/10-automation-packages.Rmd)\]
+3. Programming II: Iteration, automation, scheduling \[[**.html**](https://raw.githack.com/intro-to-data-science-25/lectures/main/03-iteration/03-iteration.html) | [**.pdf**](https://raw.githack.com/intro-to-data-science-25/lectures/main/03-iteration/03-iteration.pdf) | [**.Rmd**](https://raw.githack.com/intro-to-data-science-25/lectures/main/03-iteration/03-iteration.Rmd)\]
 
 4. Web data and technologies \[[**.html**](https://raw.githack.com/intro-to-data-science-25/lectures/main/04-webdata/04-webdata.html) | [**.pdf**](https://raw.githack.com/intro-to-data-science-25/lectures/main/04-webdata/04-webdata.pdf) | [**.Rmd**](https://raw.githack.com/intro-to-data-science-25/lectures/main/04-webdata/04-webdata.Rmd)\]
 
