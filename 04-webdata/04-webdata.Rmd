@@ -96,7 +96,7 @@ name: webdata
 <br>
 <div align="center">
 <img src="pics/facebook-contagion-paper.png" height=440>
-<img src="pics/pnas-paper.png" height=440>
+<img src="pics/reputation-formation.png" height=440>
 </div>
 
 ---

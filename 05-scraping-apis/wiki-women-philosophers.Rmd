@@ -19,8 +19,7 @@ url_p <- read_html(url)
 ```{r, eval = TRUE}
 elements_set <- html_elements(url_p, xpath = "//ul/li/a[1]")
 
-
-elements_set <- html_elements(url_p, xpath = "//h2/span[text()='Alphabetically']//following::li/a[1]")
+elements_set <- html_elements(url_p, xpath = "//h2[text()='Alphabetically']//following::div[contains(@class,'div-col')]//li/a[1]")
 ```
   
   **Step 3:** Extract information and clean it up
@@ -47,14 +46,15 @@ philosopher_names_clean[1:5]
 
 ```{r, eval = FALSE}
 library(rvest)
-url_p <- read_html("https://www.nytimes.com")
+url_p <- read_html("https://www.spiegel.de")
 # xpath: paste the expression from Selectorgadget!
 # note: we use single quotation marks here (' instead of ") to wrap around the expression!
-xpath <- '//*[contains(concat( " ", @class, " " ), concat( " ", "erslblw0", " " ))]//*[contains(concat( " ", @class, " " ), concat( " ", "e1lsht870", " " ))]'
+xpath <- '//*[contains(concat( " ", @class, " " ), concat( " ", "focus\\:opacity-moderate", " " ))] | //*[contains(concat( " ", @class, " " ), concat( " ", "align-middle", " " ))]'
 headlines <- html_elements(url_p, xpath = xpath) 
 headlines_raw <- html_text(headlines)
 length(headlines_raw)
 head(headlines_raw)
+headlines_raw <- str_subset(headlines_raw, "\\n\\n", negate = TRUE) # remove empty strings
 ```
 
 ```{r, eval = TRUE, echo = FALSE}
