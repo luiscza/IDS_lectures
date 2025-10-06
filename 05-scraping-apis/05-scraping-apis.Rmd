@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Data Science"
-subtitle: "Session 6: Web scraping and APIs"
+subtitle: "Session 5: Web scraping and APIs"
 author: "Simon Munzert"
-institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-24)" #"`r format(Sys.time(), '%d %B %Y')`"
+institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-25)" #"`r format(Sys.time(), '%d %B %Y')`"
 output:
   xaringan::moon_reader:
     includes:
@@ -950,7 +950,7 @@ The *New York Times* provides several APIs for developers at [https://developer.
 First, we load the key that we stored separately as a string (here: `nytimes_apikey` stored in `rkeys.RDa`).
 
 ```{r}
-load("/Users/simonmunzert/rkeys.RDa")
+load("/Users/s.munzert/rkeys.RDa")
 ``` 
 
 Next we specify the API endpoint using the API key:
@@ -1203,10 +1203,10 @@ Finally, if you plan to write an R client for a web API, check out [this guide](
 
 ### Assignment
 
-Assignment 3 is about to go online. Check it out and start scraping the web (politely).
+Assignment 2 is about to go online. Check it out and start scraping the web (politely).
 
 ### Next lecture
 
-Model fitting and evaluation. Now that we know how to retrieve data, let's learn how to model and learn from them.
+Databases! Bring coffee.
 
 

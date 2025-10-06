@@ -20,13 +20,13 @@ class: center, middle, inverse, title-slide
 # Introduction to Data Science
 ]
 .subtitle[
-## Session 6: Web scraping and APIs
+## Session 5: Web scraping and APIs
 ]
 .author[
 ### Simon Munzert
 ]
 .institute[
-### Hertie School | <a href="https://github.com/intro-to-data-science-24">GRAD-C11/E1339</a>
+### Hertie School | <a href="https://github.com/intro-to-data-science-25">GRAD-C11/E1339</a>
 ]
 
 ---
@@ -455,7 +455,7 @@ R&gt; spaceflights
 
 ```
 ## # A tibble: 7 × 5
-##   ``        `Russia  Soviet Union` `United States` China Total
+##   ``        `Russia  Soviet Union` `United States` China Total
 ##   &lt;chr&gt;     &lt;chr&gt;                  &lt;chr&gt;           &lt;int&gt; &lt;chr&gt;
 ## 1 1961–1970 16                     25                 NA 41   
 ## 2 1971–1980 30                     8                  NA 38   
@@ -824,10 +824,10 @@ R&gt; response
 
 ```
 ## Response [http://ip-api.com/json]
-##   Date: 2024-10-05 14:56
+##   Date: 2025-10-02 15:38
 ##   Status: 200
 ##   Content-Type: application/json; charset=utf-8
-##   Size: 279 B
+##   Size: 315 B
 ```
 ]
 
@@ -847,43 +847,43 @@ R&gt; response_parsed
 ## [1] "success"
 ## 
 ## $country
-## [1] "Czechia"
+## [1] "Germany"
 ## 
 ## $countryCode
-## [1] "CZ"
+## [1] "DE"
 ## 
 ## $region
-## [1] "42"
+## [1] "BE"
 ## 
 ## $regionName
-## [1] "Ústecký kraj"
+## [1] "State of Berlin"
 ## 
 ## $city
-## [1] "Duchcov"
+## [1] "Berlin"
 ## 
 ## $zip
-## [1] "419 01"
+## [1] "10117"
 ## 
 ## $lat
-## [1] 50.6
+## [1] 52.5203
 ## 
 ## $lon
-## [1] 13.75
+## [1] 13.3849
 ## 
 ## $timezone
-## [1] "Europe/Prague"
+## [1] "Europe/Berlin"
 ## 
 ## $isp
-## [1] "Speednet"
+## [1] "Vodafone Kabel Deutschland"
 ## 
 ## $org
-## [1] "Speednet, s.r.o."
+## [1] "Vodafone Kabel Deutschland GmbH"
 ## 
 ## $as
-## [1] "AS43070 JAW.cz s.r.o."
+## [1] "AS3209 Vodafone GmbH"
 ## 
 ## $query
-## [1] "188.92.9.117"
+## [1] "95.91.246.35"
 ```
 ]
 
@@ -907,43 +907,43 @@ R&gt; response_parsed
 ## [1] "success"
 ## 
 ## $country
-## [1] "Czechia"
+## [1] "Germany"
 ## 
 ## $countryCode
-## [1] "CZ"
+## [1] "DE"
 ## 
 ## $region
-## [1] "42"
+## [1] "BE"
 ## 
 ## $regionName
-## [1] "Ústecký kraj"
+## [1] "State of Berlin"
 ## 
 ## $city
-## [1] "Duchcov"
+## [1] "Berlin"
 ## 
 ## $zip
-## [1] "419 01"
+## [1] "10117"
 ## 
 ## $lat
-## [1] 50.6
+## [1] 52.5203
 ## 
 ## $lon
-## [1] 13.75
+## [1] 13.3849
 ## 
 ## $timezone
-## [1] "Europe/Prague"
+## [1] "Europe/Berlin"
 ## 
 ## $isp
-## [1] "Speednet"
+## [1] "Vodafone Kabel Deutschland"
 ## 
 ## $org
-## [1] "Speednet, s.r.o."
+## [1] "Vodafone Kabel Deutschland GmbH"
 ## 
 ## $as
-## [1] "AS43070 JAW.cz s.r.o."
+## [1] "AS3209 Vodafone GmbH"
 ## 
 ## $query
-## [1] "188.92.9.117"
+## [1] "95.91.246.35"
 ```
 ]
 
@@ -960,19 +960,21 @@ R&gt; as.data.frame(response_parsed)
 
 ```
 ##    status country countryCode
-## 1 success Czechia          CZ
-##   region   regionName    city
-## 1     42 Ústecký kraj Duchcov
-##      zip  lat   lon
-## 1 419 01 50.6 13.75
-##        timezone      isp
-## 1 Europe/Prague Speednet
-##                org
-## 1 Speednet, s.r.o.
-##                      as
-## 1 AS43070 JAW.cz s.r.o.
+## 1 success Germany          DE
+##   region      regionName
+## 1     BE State of Berlin
+##     city   zip     lat
+## 1 Berlin 10117 52.5203
+##       lon      timezone
+## 1 13.3849 Europe/Berlin
+##                          isp
+## 1 Vodafone Kabel Deutschland
+##                               org
+## 1 Vodafone Kabel Deutschland GmbH
+##                     as
+## 1 AS3209 Vodafone GmbH
 ##          query
-## 1 188.92.9.117
+## 1 95.91.246.35
 ```
 ]
 
@@ -1109,21 +1111,21 @@ R&gt; ip_df
 ```
 
 ```
-##     status country countryCode region   regionName              city    zip
-##     &lt;char&gt;  &lt;char&gt;      &lt;char&gt; &lt;char&gt;       &lt;char&gt;            &lt;char&gt; &lt;char&gt;
-## 1: success Czechia          CZ     42 Ústecký kraj           Duchcov 419 01
-## 2:    fail    &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;         &lt;NA&gt;              &lt;NA&gt;   &lt;NA&gt;
-## 3: success Germany          DE     HE        Hesse Frankfurt am Main  60314
-##        lat     lon      timezone         isp              org
-##      &lt;num&gt;   &lt;num&gt;        &lt;char&gt;      &lt;char&gt;           &lt;char&gt;
-## 1: 50.6000 13.7500 Europe/Prague    Speednet Speednet, s.r.o.
-## 2:      NA      NA          &lt;NA&gt;        &lt;NA&gt;             &lt;NA&gt;
-## 3: 50.1103  8.7147 Europe/Berlin Link11 GmbH IP via link11.de
-##                       as          query
-##                   &lt;char&gt;         &lt;char&gt;
-## 1: AS43070 JAW.cz s.r.o.   188.92.9.117
-## 2:                  &lt;NA&gt;       10.0.1.1
-## 3:   AS34309 Link11 GmbH 128.65.210.183
+##     status country countryCode region      regionName              city    zip
+##     &lt;char&gt;  &lt;char&gt;      &lt;char&gt; &lt;char&gt;          &lt;char&gt;            &lt;char&gt; &lt;char&gt;
+## 1: success Germany          DE     BE State of Berlin            Berlin  10117
+## 2:    fail    &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;            &lt;NA&gt;              &lt;NA&gt;   &lt;NA&gt;
+## 3: success Germany          DE     HE           Hesse Frankfurt am Main  60314
+##        lat     lon      timezone                        isp
+##      &lt;num&gt;   &lt;num&gt;        &lt;char&gt;                     &lt;char&gt;
+## 1: 52.5203 13.3849 Europe/Berlin Vodafone Kabel Deutschland
+## 2:      NA      NA          &lt;NA&gt;                       &lt;NA&gt;
+## 3: 50.1103  8.7147 Europe/Berlin                Link11 GmbH
+##                                org                   as          query
+##                             &lt;char&gt;               &lt;char&gt;         &lt;char&gt;
+## 1: Vodafone Kabel Deutschland GmbH AS3209 Vodafone GmbH   95.91.246.35
+## 2:                            &lt;NA&gt;                 &lt;NA&gt;       10.0.1.1
+## 3:                IP via link11.de  AS34309 Link11 GmbH 128.65.210.181
 ```
 
 
@@ -1169,7 +1171,7 @@ First, we load the key that we stored separately as a string (here: `nytimes_api
 
 
 ``` r
-R&gt; load("/Users/simonmunzert/rkeys.RDa")
+R&gt; load("/Users/s.munzert/rkeys.RDa")
 ```
 
 Next we specify the API endpoint using the API key:
@@ -1189,9 +1191,9 @@ R&gt; nytimes_most_popular$results$title[1:3]
 ```
 
 ```
-## [1] "Kamala Harris and the Influence of an Estranged Father Just Two Miles Away"
-## [2] "Election 2024 Polls: Harris vs. Trump"                                     
-## [3] "Democrats Have a Corruption Problem. They Can’t Keep Ignoring It."
+## [1] "How Social Security Will Be Affected by a Government Shutdown"       
+## [2] "Trump to Withhold $18 Billion for New York-Area Transit Projects"    
+## [3] "White House Uses Shutdown to Maximize Pain and Punish Political Foes"
 ```
 
 ---
@@ -1373,13 +1375,6 @@ Get started with the package following [this vignette](https://cran.r-project.or
 
 ``` r
 R&gt; library(jsonlite)
-```
-
-```
-## Warning: package 'jsonlite' was built under R version 4.4.1
-```
-
-``` r
 R&gt; x &lt;- '[1, 2, true, false]'
 R&gt; fromJSON(x)
 ```
@@ -1457,22 +1452,22 @@ Finally, if you plan to write an R client for a web API, check out [this guide](
 
 ### Assignment
 
-Assignment 3 is about to go online. Check it out and start scraping the web (politely).
+Assignment 2 is about to go online. Check it out and start scraping the web (politely).
 
 ### Next lecture
 
-Model fitting and evaluation. Now that we know how to retrieve data, let's learn how to model and learn from them.
+Databases! Bring coffee.
 
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9",
-"hash": true
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9",
+  "hash": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
