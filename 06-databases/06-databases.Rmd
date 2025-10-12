@@ -2,7 +2,7 @@
 title: "Introduction to Data Science"
 subtitle: "Session 4: Relational databases and SQL"
 author: "Simon Munzert"
-institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-24)" #"`r format(Sys.time(), '%d %B %Y')`"
+institute: "Hertie School | [GRAD-C11/E1339](https://github.com/intro-to-data-science-25)" #"`r format(Sys.time(), '%d %B %Y')`"
 output:
   xaringan::moon_reader:
     includes:
@@ -1360,6 +1360,6 @@ None! But you'll get the chance to practice databasing with R in the lab.
 
 ### Next lecture
 
-Web data and technologies - relational data structures FTW!
+Let's finally do something useful with data!
 
 
