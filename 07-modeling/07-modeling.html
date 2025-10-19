@@ -20,13 +20,13 @@ class: center, middle, inverse, title-slide
 # Introduction to Data Science
 ]
 .subtitle[
-## Session 7: Model fitting and evaluation
+## Session 7: Modeling and evaluation
 ]
 .author[
 ### Simon Munzert
 ]
 .institute[
-### Hertie School | <a href="https://github.com/intro-to-data-science-24">GRAD-C11/E1339</a>
+### Hertie School | <a href="https://github.com/intro-to-data-science-25">GRAD-C11/E1339</a>
 ]
 
 ---
@@ -416,7 +416,7 @@ R&gt; models_list[[1]]
    
    Coefficients:
    (Intercept)    dep_delay  
-        -5.971        1.017
+        -5.988        1.015
 ```
 
 
@@ -1396,8 +1396,8 @@ R&gt; models_broom[[1]] # inspect one list entry
    # A tibble: 2 × 5
      term        estimate std.error statistic   p.value
      &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
-   1 (Intercept)    -5.97   0.192       -31.1 6.05e-203
-   2 dep_delay       1.02   0.00455     224.  0
+   1 (Intercept)    -5.99   0.190       -31.5 3.13e-207
+   2 dep_delay       1.01   0.00452     224.  0
 ```
 
 Next, let's merge them all into one data frame:
@@ -1525,23 +1525,23 @@ There are three key `modelsummary` verbs that you need to learn.&lt;sup&gt;1&lt;
 R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
 ```
 
-<div id="vicjgmpdef" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vicjgmpdef table {
+<div id="uqloojqsjv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uqloojqsjv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vicjgmpdef thead, #vicjgmpdef tbody, #vicjgmpdef tfoot, #vicjgmpdef tr, #vicjgmpdef td, #vicjgmpdef th {
+#uqloojqsjv thead, #uqloojqsjv tbody, #uqloojqsjv tfoot, #uqloojqsjv tr, #uqloojqsjv td, #uqloojqsjv th {
   border-style: none;
 }
 
-#vicjgmpdef p {
+#uqloojqsjv p {
   margin: 0;
   padding: 0;
 }
 
-#vicjgmpdef .gt_table {
+#uqloojqsjv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1567,12 +1567,12 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-left-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_caption {
+#uqloojqsjv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vicjgmpdef .gt_title {
+#uqloojqsjv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1584,7 +1584,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-bottom-width: 0;
 }
 
-#vicjgmpdef .gt_subtitle {
+#uqloojqsjv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1596,7 +1596,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-top-width: 0;
 }
 
-#vicjgmpdef .gt_heading {
+#uqloojqsjv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1608,13 +1608,13 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-right-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_bottom_border {
+#uqloojqsjv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_col_headings {
+#uqloojqsjv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1629,7 +1629,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-right-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_col_heading {
+#uqloojqsjv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1649,7 +1649,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   overflow-x: hidden;
 }
 
-#vicjgmpdef .gt_column_spanner_outer {
+#uqloojqsjv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1661,15 +1661,15 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 4px;
 }
 
-#vicjgmpdef .gt_column_spanner_outer:first-child {
+#uqloojqsjv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vicjgmpdef .gt_column_spanner_outer:last-child {
+#uqloojqsjv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vicjgmpdef .gt_column_spanner {
+#uqloojqsjv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1681,11 +1681,11 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   width: 100%;
 }
 
-#vicjgmpdef .gt_spanner_row {
+#uqloojqsjv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vicjgmpdef .gt_group_heading {
+#uqloojqsjv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1711,7 +1711,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   text-align: left;
 }
 
-#vicjgmpdef .gt_empty_group_heading {
+#uqloojqsjv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1726,15 +1726,15 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   vertical-align: middle;
 }
 
-#vicjgmpdef .gt_from_md > :first-child {
+#uqloojqsjv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vicjgmpdef .gt_from_md > :last-child {
+#uqloojqsjv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vicjgmpdef .gt_row {
+#uqloojqsjv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1753,7 +1753,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   overflow-x: hidden;
 }
 
-#vicjgmpdef .gt_stub {
+#uqloojqsjv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1766,7 +1766,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 5px;
 }
 
-#vicjgmpdef .gt_stub_row_group {
+#uqloojqsjv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1780,15 +1780,15 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   vertical-align: top;
 }
 
-#vicjgmpdef .gt_row_group_first td {
+#uqloojqsjv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vicjgmpdef .gt_row_group_first th {
+#uqloojqsjv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vicjgmpdef .gt_summary_row {
+#uqloojqsjv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1798,16 +1798,16 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 5px;
 }
 
-#vicjgmpdef .gt_first_summary_row {
+#uqloojqsjv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_first_summary_row.thick {
+#uqloojqsjv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vicjgmpdef .gt_last_summary_row {
+#uqloojqsjv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1817,7 +1817,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-bottom-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_grand_summary_row {
+#uqloojqsjv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1827,7 +1827,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 5px;
 }
 
-#vicjgmpdef .gt_first_grand_summary_row {
+#uqloojqsjv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1837,7 +1837,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-top-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_last_grand_summary_row_top {
+#uqloojqsjv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1847,11 +1847,11 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-bottom-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_striped {
+#uqloojqsjv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vicjgmpdef .gt_table_body {
+#uqloojqsjv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1860,7 +1860,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-bottom-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_footnotes {
+#uqloojqsjv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1874,7 +1874,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-right-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_footnote {
+#uqloojqsjv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1883,7 +1883,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 5px;
 }
 
-#vicjgmpdef .gt_sourcenotes {
+#uqloojqsjv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1897,7 +1897,7 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   border-right-color: #D3D3D3;
 }
 
-#vicjgmpdef .gt_sourcenote {
+#uqloojqsjv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1905,73 +1905,82 @@ R&gt; modelsummary(list(model1_out, model2_out, model3_out), output = "gt")
   padding-right: 5px;
 }
 
-#vicjgmpdef .gt_left {
+#uqloojqsjv .gt_left {
   text-align: left;
 }
 
-#vicjgmpdef .gt_center {
+#uqloojqsjv .gt_center {
   text-align: center;
 }
 
-#vicjgmpdef .gt_right {
+#uqloojqsjv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vicjgmpdef .gt_font_normal {
+#uqloojqsjv .gt_font_normal {
   font-weight: normal;
 }
 
-#vicjgmpdef .gt_font_bold {
+#uqloojqsjv .gt_font_bold {
   font-weight: bold;
 }
 
-#vicjgmpdef .gt_font_italic {
+#uqloojqsjv .gt_font_italic {
   font-style: italic;
 }
 
-#vicjgmpdef .gt_super {
+#uqloojqsjv .gt_super {
   font-size: 65%;
 }
 
-#vicjgmpdef .gt_footnote_marks {
+#uqloojqsjv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vicjgmpdef .gt_asterisk {
+#uqloojqsjv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vicjgmpdef .gt_indent_1 {
+#uqloojqsjv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vicjgmpdef .gt_indent_2 {
+#uqloojqsjv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vicjgmpdef .gt_indent_3 {
+#uqloojqsjv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vicjgmpdef .gt_indent_4 {
+#uqloojqsjv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vicjgmpdef .gt_indent_5 {
+#uqloojqsjv .gt_indent_5 {
   text-indent: 25px;
+}
+
+#uqloojqsjv .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#uqloojqsjv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=" "> </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(1)">(1)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(2)">(2)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(3)">(3)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="a-"> </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(1)">(1)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(2)">(2)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(3)">(3)</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2070,23 +2079,23 @@ R&gt; modelsummary(models,
 +              output = "gt") 
 ```
 
-<div id="zqrvjdlyur" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zqrvjdlyur table {
+<div id="ifsyhhvyor" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ifsyhhvyor table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zqrvjdlyur thead, #zqrvjdlyur tbody, #zqrvjdlyur tfoot, #zqrvjdlyur tr, #zqrvjdlyur td, #zqrvjdlyur th {
+#ifsyhhvyor thead, #ifsyhhvyor tbody, #ifsyhhvyor tfoot, #ifsyhhvyor tr, #ifsyhhvyor td, #ifsyhhvyor th {
   border-style: none;
 }
 
-#zqrvjdlyur p {
+#ifsyhhvyor p {
   margin: 0;
   padding: 0;
 }
 
-#zqrvjdlyur .gt_table {
+#ifsyhhvyor .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2112,12 +2121,12 @@ R&gt; modelsummary(models,
   border-left-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_caption {
+#ifsyhhvyor .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zqrvjdlyur .gt_title {
+#ifsyhhvyor .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2129,7 +2138,7 @@ R&gt; modelsummary(models,
   border-bottom-width: 0;
 }
 
-#zqrvjdlyur .gt_subtitle {
+#ifsyhhvyor .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2141,7 +2150,7 @@ R&gt; modelsummary(models,
   border-top-width: 0;
 }
 
-#zqrvjdlyur .gt_heading {
+#ifsyhhvyor .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2153,13 +2162,13 @@ R&gt; modelsummary(models,
   border-right-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_bottom_border {
+#ifsyhhvyor .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_col_headings {
+#ifsyhhvyor .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2174,7 +2183,7 @@ R&gt; modelsummary(models,
   border-right-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_col_heading {
+#ifsyhhvyor .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2194,7 +2203,7 @@ R&gt; modelsummary(models,
   overflow-x: hidden;
 }
 
-#zqrvjdlyur .gt_column_spanner_outer {
+#ifsyhhvyor .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2206,15 +2215,15 @@ R&gt; modelsummary(models,
   padding-right: 4px;
 }
 
-#zqrvjdlyur .gt_column_spanner_outer:first-child {
+#ifsyhhvyor .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zqrvjdlyur .gt_column_spanner_outer:last-child {
+#ifsyhhvyor .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zqrvjdlyur .gt_column_spanner {
+#ifsyhhvyor .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2226,11 +2235,11 @@ R&gt; modelsummary(models,
   width: 100%;
 }
 
-#zqrvjdlyur .gt_spanner_row {
+#ifsyhhvyor .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zqrvjdlyur .gt_group_heading {
+#ifsyhhvyor .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2256,7 +2265,7 @@ R&gt; modelsummary(models,
   text-align: left;
 }
 
-#zqrvjdlyur .gt_empty_group_heading {
+#ifsyhhvyor .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2271,15 +2280,15 @@ R&gt; modelsummary(models,
   vertical-align: middle;
 }
 
-#zqrvjdlyur .gt_from_md > :first-child {
+#ifsyhhvyor .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zqrvjdlyur .gt_from_md > :last-child {
+#ifsyhhvyor .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zqrvjdlyur .gt_row {
+#ifsyhhvyor .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2298,7 +2307,7 @@ R&gt; modelsummary(models,
   overflow-x: hidden;
 }
 
-#zqrvjdlyur .gt_stub {
+#ifsyhhvyor .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2311,7 +2320,7 @@ R&gt; modelsummary(models,
   padding-right: 5px;
 }
 
-#zqrvjdlyur .gt_stub_row_group {
+#ifsyhhvyor .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2325,15 +2334,15 @@ R&gt; modelsummary(models,
   vertical-align: top;
 }
 
-#zqrvjdlyur .gt_row_group_first td {
+#ifsyhhvyor .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zqrvjdlyur .gt_row_group_first th {
+#ifsyhhvyor .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zqrvjdlyur .gt_summary_row {
+#ifsyhhvyor .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2343,16 +2352,16 @@ R&gt; modelsummary(models,
   padding-right: 5px;
 }
 
-#zqrvjdlyur .gt_first_summary_row {
+#ifsyhhvyor .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_first_summary_row.thick {
+#ifsyhhvyor .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zqrvjdlyur .gt_last_summary_row {
+#ifsyhhvyor .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2362,7 +2371,7 @@ R&gt; modelsummary(models,
   border-bottom-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_grand_summary_row {
+#ifsyhhvyor .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2372,7 +2381,7 @@ R&gt; modelsummary(models,
   padding-right: 5px;
 }
 
-#zqrvjdlyur .gt_first_grand_summary_row {
+#ifsyhhvyor .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2382,7 +2391,7 @@ R&gt; modelsummary(models,
   border-top-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_last_grand_summary_row_top {
+#ifsyhhvyor .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2392,11 +2401,11 @@ R&gt; modelsummary(models,
   border-bottom-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_striped {
+#ifsyhhvyor .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zqrvjdlyur .gt_table_body {
+#ifsyhhvyor .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2405,7 +2414,7 @@ R&gt; modelsummary(models,
   border-bottom-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_footnotes {
+#ifsyhhvyor .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2419,7 +2428,7 @@ R&gt; modelsummary(models,
   border-right-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_footnote {
+#ifsyhhvyor .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2428,7 +2437,7 @@ R&gt; modelsummary(models,
   padding-right: 5px;
 }
 
-#zqrvjdlyur .gt_sourcenotes {
+#ifsyhhvyor .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2442,7 +2451,7 @@ R&gt; modelsummary(models,
   border-right-color: #D3D3D3;
 }
 
-#zqrvjdlyur .gt_sourcenote {
+#ifsyhhvyor .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2450,74 +2459,83 @@ R&gt; modelsummary(models,
   padding-right: 5px;
 }
 
-#zqrvjdlyur .gt_left {
+#ifsyhhvyor .gt_left {
   text-align: left;
 }
 
-#zqrvjdlyur .gt_center {
+#ifsyhhvyor .gt_center {
   text-align: center;
 }
 
-#zqrvjdlyur .gt_right {
+#ifsyhhvyor .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zqrvjdlyur .gt_font_normal {
+#ifsyhhvyor .gt_font_normal {
   font-weight: normal;
 }
 
-#zqrvjdlyur .gt_font_bold {
+#ifsyhhvyor .gt_font_bold {
   font-weight: bold;
 }
 
-#zqrvjdlyur .gt_font_italic {
+#ifsyhhvyor .gt_font_italic {
   font-style: italic;
 }
 
-#zqrvjdlyur .gt_super {
+#ifsyhhvyor .gt_super {
   font-size: 65%;
 }
 
-#zqrvjdlyur .gt_footnote_marks {
+#ifsyhhvyor .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zqrvjdlyur .gt_asterisk {
+#ifsyhhvyor .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zqrvjdlyur .gt_indent_1 {
+#ifsyhhvyor .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zqrvjdlyur .gt_indent_2 {
+#ifsyhhvyor .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zqrvjdlyur .gt_indent_3 {
+#ifsyhhvyor .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zqrvjdlyur .gt_indent_4 {
+#ifsyhhvyor .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zqrvjdlyur .gt_indent_5 {
+#ifsyhhvyor .gt_indent_5 {
   text-indent: 25px;
+}
+
+#ifsyhhvyor .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#ifsyhhvyor div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   &lt;caption class='gt_caption'&gt;Linear regression of flight delay at arrival (in mins)&lt;/caption&gt;
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=" "> </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(1)">(1)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(2)">(2)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="(3)">(3)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="a-"> </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(1)">(1)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(2)">(2)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="a(3)">(3)</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2825,25 +2843,22 @@ Some final bits of advice that didn't fit on the main slides:
 
 ### Assignment
 
-No new assignment this time - but don't forget about the quiz! And about the workshop
+No new assignment this time - but don't forget about the quiz!
 
 
 ### Next lecture
 
 Visualization. 📊
 
-But before that: Workshop time! 🛠️🎉
-
-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9",
-"hash": true
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9",
+  "hash": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
