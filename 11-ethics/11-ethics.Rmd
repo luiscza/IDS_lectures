@@ -775,7 +775,7 @@ If obtaining full informed consent is not possible, for example, when informed c
 - Open to all members of the Hertie School, including students!
 - Ethics procedure mandatory for all research projects involving human subjects, **including your Master's thesis**!
 - Three stages: self-assessment, review by the Research Ethics Officer, full review by the Research Ethics Committee
-- Check out the [Moodle page](https://moodle.hertie-school.org/course/view.php?id=1050&section=27) on research ethics!
+- Check out the [Moodle page](https://moodle.hertie-school.org/course/section.php?id=36396) on research ethics!
 ]
 
 .pull-right[
